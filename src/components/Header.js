@@ -8,6 +8,7 @@ export default function Header(props) {
   }
   return (
     <View style={styles.container}>
+      <View style={styles.null} />
       <View style={styles.navView}>
         <TouchableOpacity onPress={clickNav}>
           <Image source={logo} style={styles.img} />
@@ -34,5 +35,8 @@ const styles = StyleSheet.create({
   text: {
     color: white,
     marginLeft: 10,
+  },
+  null: {
+    flex: 1,
   },
 })

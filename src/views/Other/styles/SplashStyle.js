@@ -1,10 +1,10 @@
-const { StyleSheet } = require('react-native'),
-  Color = require('../../../../assets/color')
+import { StyleSheet } from 'react-native'
+import color from '../../../../assets/color'
 
 module.exports = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Color.kurly,
+    backgroundColor: color.kurly,
   },
   logoView: {
     alignItems: 'center',

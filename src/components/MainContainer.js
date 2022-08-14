@@ -1,15 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StatusBar } from 'expo-status-bar'
-import { getStatusBarHeight } from 'react-native-status-bar-height'
 import LoginScreen from '../views/Auth/screen/LoginScreen'
-import RegisterScreen from '../views/Auth/screen/RegisterScreen'
-import AddAdmin from '../views/Other/screens/AddAdmin'
 import ChangePw from '../views/Other/screens/ChangePw'
-import ChoiceScreen from '../views/Other/screens/ChoiceScreen'
-import MainScreen from '../views/Other/screens/MainScreen'
-import MyPage from '../views/Other/screens/MyPage'
-import SplashScreen from '../views/Other/screens/SplashScreen'
+import ReadScreen from '../views/Other/screens/ReadScreen'
+import TabBar from './TabBar'
 
 const Stack = createNativeStackNavigator()
 
@@ -31,22 +26,12 @@ export default function MainContainer() {
         <Stack.Screen
           options={{ headerShown: false }}
           name="Main"
-          component={SplashScreen}
+          component={TabBar}
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          name="Register"
-          component={RegisterScreen}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="choice"
-          component={ChoiceScreen}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="main"
-          component={MainScreen}
+          name="pw"
+          component={ChangePw}
         />
       </Stack.Navigator>
     </NavigationContainer>

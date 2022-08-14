@@ -3,7 +3,6 @@ const { StyleSheet } = require('react-native'),
 
 module.exports = StyleSheet.create({
   loginView: {
-    marginTop: 34,
     flex: 1,
   },
   header: {
@@ -14,7 +13,7 @@ module.exports = StyleSheet.create({
   content: {
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 12,
+    flex: 11,
   },
   logoBox: {
     justifyContent: 'center',

@@ -1,11 +1,14 @@
+import { useNavigation } from '@react-navigation/native'
 import { useState } from 'react'
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import Header from '../../../components/Header'
 import styles from '../styles/ChangePwStyle'
 
-export default function ChangePw({ navigation }) {
+export default function ChangePw() {
   const [inputId, setInputId] = useState()
   const [inputPw, setInputPw] = useState()
+
+  const navigation = useNavigation()
   const userData = [
     {
       id: '1111',
@@ -14,9 +17,9 @@ export default function ChangePw({ navigation }) {
   ]
 
   const clickLoginBtn = () => {
-    if (inputId !== userData[0].id || inputPw !== userData[0].pw)
-      alert('Undefined User')
-    navigation.navigate('choice')
+    // if (inputId !== userData[0].id || inputPw !== userData[0].pw)
+    //   alert('Undefined User')
+    navigation.navigate('Main')
   }
 
   return (

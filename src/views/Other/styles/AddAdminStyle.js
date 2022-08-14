@@ -1,5 +1,5 @@
-const { StyleSheet } = require('react-native'),
-  Color = require('../../../../assets/color')
+import { StyleSheet } from 'react-native'
+import color from '../../../../assets/color'
 
 module.exports = StyleSheet.create({
   loginView: {
@@ -14,7 +14,7 @@ module.exports = StyleSheet.create({
   content: {
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 12,
+    flex: 11,
   },
   inBox: {
     flex: 1.5,
@@ -36,11 +36,11 @@ module.exports = StyleSheet.create({
     width: 240,
     height: 40,
     paddingHorizontal: 15,
-    color: Color.black,
-    backgroundColor: Color.white,
+    color: color.black,
+    backgroundColor: color.white,
     borderRadius: 25,
     borderWidth: 2,
-    borderColor: Color.black,
+    borderColor: color.black,
   },
   loginBtn: {
     marginBottom: 10,
@@ -49,10 +49,10 @@ module.exports = StyleSheet.create({
     borderRadius: 25,
     width: 240,
     height: 40,
-    backgroundColor: Color.kurly,
+    backgroundColor: color.kurly,
   },
   btnText: {
-    color: Color.white,
+    color: color.white,
     fontSize: 20,
   },
   inputLabelText: {

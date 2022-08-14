@@ -1,5 +1,5 @@
-const { StyleSheet } = require('react-native'),
-  Color = require('../../../../assets/color')
+import { StyleSheet } from 'react-native'
+import color from '../../../../assets/color'
 
 module.exports = StyleSheet.create({
   pageView: {
@@ -10,7 +10,7 @@ module.exports = StyleSheet.create({
     flex: 1,
   },
   content: {
-    flex: 12,
+    flex: 11,
   },
   logoText: {
     fontSize: 36,
@@ -35,12 +35,12 @@ module.exports = StyleSheet.create({
     marginBottom: 10,
   },
   img: {
-    backgroundColor: Color.grey,
+    backgroundColor: color.grey,
     width: 100,
     height: 100,
   },
   btn: {
-    backgroundColor: Color.green,
+    backgroundColor: color.green,
     width: 150,
     height: 40,
     justifyContent: 'center',
